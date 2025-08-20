@@ -1,0 +1,42 @@
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Layout from '../components/Layout/Layout'
+
+// const Pagenotfound = () => {
+//   return (
+//     <Layout title={"go back- page not found"}>
+//       <div className="pnf">
+//         <h1 className="pnf-title">404</h1>
+//         <h2 className="pnf-heading">Oops ! Page Not Found</h2>
+//         <Link to="/" className="pnf-btn">
+//           Go Back
+//         </Link>
+//       </div>
+//     </Layout>
+    
+//   )
+// }
+
+// export default Pagenotfound
+
+import React from "react";
+import { Link } from "react-router-dom";
+import Layout from "../components/Layout/Layout";
+
+
+const Pagenotfound = () => {
+  return (
+    <Layout title={"404 - Page Not Found"}>
+      <div className="pnf-container">
+        <h1 className="pnf-title">404</h1>
+        <h2 className="pnf-heading">Oops! Page Not Found</h2>
+        <p className="pnf-text">The page you're looking for doesn't exist or has been moved.</p>
+        <Link to="/" className="pnf-btn">
+          ⬅ Go Back Home
+        </Link>
+      </div>
+    </Layout>
+  );
+};
+
+export default Pagenotfound;
